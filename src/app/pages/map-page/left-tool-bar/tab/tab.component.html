@@ -1,0 +1,31 @@
+<div class="tab">
+    <button class="tablinks active" (click)="openTab($event, '.Property')">Thuộc Tính</button>
+    <button class="tablinks" (click)="openTab($event, '.Note')">Chú Giải</button>
+    <button class="tablinks" (click)="openTab($event, '.Result')">Kết Quả</button>
+</div>
+<app-left-bottom-tool-bar></app-left-bottom-tool-bar>
+<div class="tabcontent Property display">
+    <div *ngIf="mapData.length; else notExpression">
+        <div class="content">
+            <div *ngFor="let prop of mapData">
+                <div class="item">
+                    <div class="key">{{prop.key}} :</div>
+                    <div class="value">{{prop.value}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #notExpression>
+        <div>
+            Chọn dữ liệu từ mục dữ liệu để hiện thị tại đây..
+        </div>
+    </ng-template>
+</div>
+  
+<div class="tabcontent Note">
+    No data...
+</div>
+  
+<div class="tabcontent Result">
+    No data...
+</div>

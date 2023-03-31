@@ -1,0 +1,10 @@
+<div class="dropdown">
+    <button class="dropbtn" (click)="onClick()">{{ddName}} <i class="fa-solid fa-angle-down"></i></button>
+    <div #myDropdown class="dropdown-content">
+        <a
+        class="item"
+        *ngFor="let item of dropList"
+        (click)="dropdownItemClick(item, $event)"
+        >{{item?.btnName || "no name"}}</a>
+    </div>
+</div>

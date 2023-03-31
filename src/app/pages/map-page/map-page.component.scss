@@ -1,0 +1,16 @@
+.map-page {
+    display: flex;
+    width: 100%;
+    .left-tool-bar {
+        width: 20%;
+        padding-right: 0.5em ;
+    }
+    .map-area {
+        width: 80%;
+    }
+
+    .map-area-lg {
+        width: 100%;
+    }
+}
+

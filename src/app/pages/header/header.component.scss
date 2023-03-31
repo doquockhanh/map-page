@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        padding: 0.5em 2em;
+        img {
+            width: 97%;
+        }
+    }
+    .title {
+        display: flex;
+        align-items: end;
+    }
+
+    .nav {
+        display: flex;
+        margin-left: 2em;
+        border: none;
+    }
+
+    .search {
+        padding: 0.5em;
+        border-radius: 5px;
+        border: 1px solid black;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+nb-card-body {
+    padding: 0.7em 0;
+}
+
+nb-card {
+    border: none !important;
+}
+
+.padding-1 {
+    padding: 1em;
+}

@@ -1,0 +1,24 @@
+@use 'themes' as *;
+
+@use '@nebular/theme/styles/globals' as *;
+
+@include nb-install() {
+  @include nb-theme-global();
+};
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --boder: 2px solid rgb(132, 139, 138);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}

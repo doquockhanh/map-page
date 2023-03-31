@@ -1,0 +1,43 @@
+<div class="header">
+    <div class="logo">
+        <a href="#">
+            <img src="./assets/crown-logo.png" alt="logo">    
+        </a>
+    </div>
+    <div class="nav">
+        <nb-card>
+            <nb-card-body>
+                <nb-actions [size]="'medium'">
+                    <nb-action>
+                        <input class="search" type="search" placeholder="Tìm kiếm">   
+                    </nb-action>
+                    <nb-action>
+                        <i 
+                        class="fa-solid fa-table-cells"
+                        [nbPopover]="templateRef"
+                        nbPopoverPlacement="bottom"
+                        ></i>
+                    </nb-action>
+                    <nb-action>
+                        <i 
+                        class="fa-solid fa-circle-info"
+                        [nbPopover]="templateRef" 
+                        nbPopoverPlacement="bottom"
+                        ></i>
+                    </nb-action>
+                    <nb-action>
+                        <i 
+                        class="fa-solid fa-circle-user"
+                        [nbPopover]="templateRef"
+                        nbPopoverPlacement="bottom"
+                        ></i>
+                    </nb-action>
+                </nb-actions>
+            </nb-card-body>
+        </nb-card>
+        
+        <ng-template #templateRef>
+            <div class="padding-1">Coming soon!</div>
+          </ng-template>
+    </div>
+</div>

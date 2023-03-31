@@ -1,0 +1,18 @@
+<nb-card>
+    <nb-card-body class="topnav" id="myTopnav">
+        <nb-actions [size]="'small'">
+            <nb-action>
+                {{data.name}}
+            </nb-action>
+        </nb-actions>
+        <nb-actions [size]="'small'" class="reverse">
+            <nb-action>
+                <i class="fa-solid fa-box" [nbPopover]="templateRef" nbPopoverPlacement="bottom"></i>
+            </nb-action>
+        </nb-actions>
+    </nb-card-body>
+</nb-card>
+
+<ng-template #templateRef>
+    <div class="padding-1">Coming soon!</div>
+</ng-template>

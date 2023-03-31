@@ -1,0 +1,27 @@
+<nb-card>
+    <nb-card-body>
+        <nb-actions [size]="'small'">
+            <nb-action (click)="toggleLeftBar()" title="close/open left bar">
+                <i class="fa-solid fa-left-right"></i>
+            </nb-action>
+            <nb-action [nbPopover]="templateRef" nbPopoverPlacement="bottom">
+                <i class="fa-solid fa-location-dot"></i>
+            </nb-action>
+            <nb-action [nbPopover]="templateRef" nbPopoverPlacement="bottom">
+                <i class="fa-solid fa-circle-info"></i>
+            </nb-action>
+            <nb-action [nbPopover]="templateRef" nbPopoverPlacement="bottom">
+                <i class="fa-solid fa-arrow-pointer"></i>
+            </nb-action>
+        </nb-actions>
+        <nb-actions>
+            <nb-action title="full screen"> 
+                <app-full-screen></app-full-screen>
+            </nb-action>
+        </nb-actions>
+    </nb-card-body>
+</nb-card>
+
+<ng-template #templateRef>
+  <div class="padding-1">Coming soon!</div>
+</ng-template>

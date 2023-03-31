@@ -1,0 +1,31 @@
+<div class="tool-bar">
+    <app-drop-down [ddName]="'Công cụ'">
+        <app-button 
+        [btnName]="'lớp bản đồ'" 
+        (click)="comingSoon()"
+        ></app-button>
+        <app-button 
+        [btnName]="'chú giải'" 
+        (click)="comingSoon()"
+        ></app-button>
+        <app-button 
+        [btnName]="'thuộc tính'" 
+        (click)="comingSoon()"
+        ></app-button>
+        <app-button 
+        [btnName]="'kết quả'" 
+        (click)="comingSoon()"
+        ></app-button>
+    </app-drop-down>
+    <app-drop-down [ddName]="'Dữ liệu'">
+        <app-button 
+        *ngFor="let item of data"
+        [btnName]="item.name" 
+        (click)="itemClick(true, item)"
+        ></app-button>
+    </app-drop-down>
+    <app-drop-down [ddName]="'Bản đồ'" (click)="comingSoon()">
+    </app-drop-down>
+    <app-button [btnName]="'Tìm kiếm'" (click)="comingSoon()"></app-button>
+</div>
+<app-bottom-toll-bar></app-bottom-toll-bar>
